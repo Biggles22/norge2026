@@ -215,6 +215,7 @@ main {
 
 .route-grid,
 .camera-grid,
+.hotel-grid,
 .charge-grid,
 .tesla-grid,
 .strategy-grid {
@@ -225,6 +226,7 @@ main {
 
 .route-card,
 .camera-card,
+.hotel-card,
 .charge-card,
 .info-panel,
 .strategy-card,
@@ -241,6 +243,10 @@ main {
 .info-panel,
 .strategy-card {
     padding: 22px;
+}
+
+.hotel-card {
+    overflow: hidden;
 }
 
 .route-number {
@@ -335,6 +341,90 @@ main {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.hotel-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.hotel-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: var(--mist);
+}
+
+.hotel-card-body {
+    padding: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+.hotel-card-body p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.hotel-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0;
+}
+
+.hotel-facts div {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f3f6f7;
+}
+
+.hotel-facts dt {
+    margin-bottom: 3px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 850;
+    text-transform: uppercase;
+}
+
+.hotel-facts dd {
+    margin: 0;
+    font-weight: 850;
+}
+
+.hotel-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hotel-actions a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    color: var(--fjord);
+    font-weight: 850;
+    text-decoration: none;
+}
+
+.featured-hotel {
+    border-color: rgba(15, 74, 61, 0.45);
+}
+
+.cost-summary {
+    margin-top: 16px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--pine);
+    color: var(--white);
+}
+
+.cost-summary span {
+    color: rgba(255, 255, 255, 0.86);
 }
 
 .tesla-section {
@@ -537,6 +627,7 @@ footer p {
     .quick-panel,
     .route-grid,
     .camera-grid,
+    .hotel-grid,
     .charge-grid,
     .tesla-grid,
     .strategy-grid,
@@ -565,6 +656,15 @@ footer p {
 
     .camera-meta {
         grid-template-columns: 1fr;
+    }
+
+    .hotel-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .cost-summary {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     footer {
