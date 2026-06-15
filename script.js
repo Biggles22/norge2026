@@ -7,7 +7,9 @@ const cameras = [
         focus: "Fjällväder och sikt innan Norge",
         location: "Storlien-Teveldalen",
         maps: "https://www.google.com/maps/search/?api=1&query=Storlien%20Teveldalen%20E14",
-        vegvesen: "https://www.vegvesen.no/webkamera"
+        cameraName: "Teveldalen",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1729006",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1729006_1"
     },
     {
         route: "are-trondheim",
@@ -17,7 +19,9 @@ const cameras = [
         focus: "Väderutsatt dalsträcka",
         location: "Meråker",
         maps: "https://www.google.com/maps/search/?api=1&query=Mer%C3%A5ker%20E14",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Meådal",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1729007",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1729007_1"
     },
     {
         route: "are-trondheim",
@@ -27,7 +31,9 @@ const cameras = [
         focus: "Infart, köer och vägomläggningar",
         location: "Stjørdal",
         maps: "https://www.google.com/maps/search/?api=1&query=Stj%C3%B8rdal%20Hell%20E14",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Malvik",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1629009",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1629009_1"
     },
     {
         route: "are-trondheim",
@@ -37,7 +43,9 @@ const cameras = [
         focus: "Stadstrafik och tunnelstatus",
         location: "Trondheim",
         maps: "https://www.google.com/maps/search/?api=1&query=Trondheim%20E6",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Heimdal",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1629003",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1629003_1"
     },
     {
         route: "coast",
@@ -47,7 +55,9 @@ const cameras = [
         focus: "Ut från Trondheim mot kusten",
         location: "Orkanger",
         maps: "https://www.google.com/maps/search/?api=1&query=Orkanger%20E39",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Kallfoss",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1629002",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1629002_1"
     },
     {
         route: "coast",
@@ -57,7 +67,9 @@ const cameras = [
         focus: "Färjeläge och väntetid",
         location: "Halsa-Kanestraum",
         maps: "https://www.google.com/maps/search/?api=1&query=Halsa%20Kanestraum%20E39",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Kanestraum ferjekai",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/3000032",
+        image: "https://kamera.atlas.vegvesen.no/api/images/3000032_1"
     },
     {
         route: "coast",
@@ -67,7 +79,9 @@ const cameras = [
         focus: "Broar, vind och stadstrafik",
         location: "Kristiansund",
         maps: "https://www.google.com/maps/search/?api=1&query=Kristiansund%20Fv64",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Gjemnessundbrua",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1529025",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1529025_1"
     },
     {
         route: "coast",
@@ -77,7 +91,9 @@ const cameras = [
         focus: "Vind, vågor och broar",
         location: "Atlanterhavsvegen",
         maps: "https://www.google.com/maps/search/?api=1&query=Atlanterhavsvegen",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Atlanterhavsvegen",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/3000819",
+        image: "https://kamera.atlas.vegvesen.no/api/images/3000819_1"
     },
     {
         route: "coast",
@@ -87,7 +103,9 @@ const cameras = [
         focus: "Stadstrafik och vidare mot Romsdalen",
         location: "Molde",
         maps: "https://www.google.com/maps/search/?api=1&query=Molde%20E39%20E136",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Molde ferjekai",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/3000033",
+        image: "https://kamera.atlas.vegvesen.no/api/images/3000033_1"
     },
     {
         route: "coast",
@@ -97,7 +115,9 @@ const cameras = [
         focus: "Fjordväg, regn och skredstatus",
         location: "Åndalsnäs",
         maps: "https://www.google.com/maps/search/?api=1&query=%C3%85ndalsnes%20E136",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Isfjorden",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1529019",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1529019_1"
     },
     {
         route: "trollstigen",
@@ -107,7 +127,9 @@ const cameras = [
         focus: "Start mot Trollstigen, väder och trafikmängd",
         location: "Åndalsnäs-Isterdalen",
         maps: "https://www.google.com/maps/search/?api=1&query=%C3%85ndalsnes%20Isterdalen%20Fv63",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Trollstigen mot Åndalsnäs",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/3000408",
+        image: "https://kamera.atlas.vegvesen.no/api/images/3000408_1"
     },
     {
         route: "trollstigen",
@@ -117,7 +139,9 @@ const cameras = [
         focus: "Säsongsöppning, rasfare, hårnålar och köer",
         location: "Trollstigen",
         maps: "https://www.google.com/maps/search/?api=1&query=Trollstigen%20Fv63",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Trollstigen mot Valldal",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/3000408",
+        image: "https://kamera.atlas.vegvesen.no/api/images/3000408_2"
     },
     {
         route: "trollstigen",
@@ -127,7 +151,9 @@ const cameras = [
         focus: "Trång turistväg, stopp och väderbyte",
         location: "Gudbrandsjuvet-Valldal",
         maps: "https://www.google.com/maps/search/?api=1&query=Gudbrandsjuvet%20Valldal%20Fv63",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Valldal v/Juvet",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/3000661",
+        image: "https://kamera.atlas.vegvesen.no/api/images/3000661_1"
     },
     {
         route: "trollstigen",
@@ -137,7 +163,9 @@ const cameras = [
         focus: "Färjeläge, kö och avgångar över fjorden",
         location: "Linge-Eidsdal",
         maps: "https://www.google.com/maps/search/?api=1&query=Linge%20Eidsdal%20ferry",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Närmast: Valldal v/Juvet",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/3000661",
+        image: "https://kamera.atlas.vegvesen.no/api/images/3000661_1"
     },
     {
         route: "trollstigen",
@@ -147,7 +175,9 @@ const cameras = [
         focus: "Brant nedfart, turisttrafik och utsiktsstopp",
         location: "Ørnesvingen-Geiranger",
         maps: "https://www.google.com/maps/search/?api=1&query=%C3%98rnesvingen%20Geiranger%20Fv63",
-        vegvesen: "https://www.vegvesen.no/trafikk"
+        cameraName: "Korsmyra mot Geiranger",
+        vegvesen: "https://www.vegvesen.no/trafikk/vaerveikamera/1529007",
+        image: "https://kamera.atlas.vegvesen.no/api/images/1529007_2"
     }
 ];
 
@@ -172,9 +202,11 @@ function renderCameras(filter = "all") {
             <div class="camera-meta">
                 <span>Väg: <strong>${camera.road}</strong></span>
                 <span>Plats: <strong>${camera.location}</strong></span>
+                <span>Kamera: <strong>${camera.cameraName}</strong></span>
             </div>
             <div class="camera-links">
-                <a href="${camera.vegvesen}" target="_blank" rel="noreferrer">Öppna Vegvesen livevy</a>
+                <a href="${camera.vegvesen}" target="_blank" rel="noreferrer">Öppna rätt kamera</a>
+                <a href="${camera.image}" target="_blank" rel="noreferrer">Öppna aktuell bild</a>
                 <a href="${camera.maps}" target="_blank" rel="noreferrer">Visa plats</a>
             </div>
         </article>
