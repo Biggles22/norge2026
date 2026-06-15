@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Norge2026 samlar trafikkameror och stopp för rutten Åre-Trondheim-Åndalsnäs-Geiranger.">
-    <title>Norge2026 - Trafikkameror</title>
+    <meta name="description" content="Norge2026 samlar rutter, hotell, färjor, laddning, väderlänkar och trafikkameror för resan Åre-Trondheim-Åndalsnäs-Geiranger.">
+    <title>Norge2026 - Roadtripplan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,10 +12,13 @@
         <nav class="topbar" aria-label="Huvudnavigation">
             <a class="brand" href="#top" aria-label="Norge2026 startsida">Norge2026</a>
             <div class="nav-links">
+                <a href="#snabbplan">Snabbplan</a>
                 <a href="#rutter">Rutter</a>
                 <a href="#hotell">Hotell</a>
                 <a href="#farjor">Färjor</a>
+                <a href="#kostnader">Kostnader</a>
                 <a href="#rastplatser">Rastplatser</a>
+                <a href="#vader">Väder</a>
                 <a href="#kameror">Kameror</a>
                 <a href="#tesla">Tesla-plan</a>
                 <a href="#checklista">Checklista</a>
@@ -29,7 +32,7 @@
                 En fokuserad resevy för 14-17 juli: från Åre till Trondheim, vidare till Åndalsnäs, över Trollstigen till Geiranger och tryggt hem mot Oslo.
             </p>
             <div class="hero-actions">
-                <a class="button primary" href="#kameror">Visa trafikkameror</a>
+                <a class="button primary" href="#snabbplan">Visa snabbplan</a>
                 <a class="button secondary" href="https://www.vegvesen.no/trafikk" target="_blank" rel="noreferrer">Öppna Vegvesen</a>
             </div>
         </div>
@@ -50,8 +53,8 @@
                 <strong>2</strong>
             </div>
             <div>
-                <span class="label">Källor</span>
-                <strong>Vegvesen</strong>
+                <span class="label">Hemväg</span>
+                <strong>Planerad</strong>
             </div>
             <div>
                 <span class="label">Status</span>
@@ -60,6 +63,66 @@
             <div>
                 <span class="label">Tesla</span>
                 <strong>Buffert</strong>
+            </div>
+        </section>
+
+        <section class="section plan-section" id="snabbplan">
+            <div class="section-heading">
+                <p class="eyebrow">Snabbplan 14-17 juli</p>
+                <h2>Det viktigaste per kördag</h2>
+                <p class="subtle">
+                    Kortversionen när ni bara behöver veta nästa mål, kritisk punkt och vad som ska kontrolleras innan avfärd.
+                </p>
+            </div>
+
+            <div class="plan-grid">
+                <article class="plan-card">
+                    <span class="tag">14 juli</span>
+                    <h3>Åre -> Trondheim</h3>
+                    <dl class="plan-facts">
+                        <div><dt>Körtid</dt><dd>Ca 180 km / 2 h 45 min</dd></div>
+                        <div><dt>Hotell</dt><dd>Radisson Blu Royal Garden</dd></div>
+                        <div><dt>Laddmål</dt><dd>Trondheim Supercharger före incheckning</dd></div>
+                        <div><dt>Kolla</dt><dd>E14, fjällväder och gränspassage</dd></div>
+                    </dl>
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;origin=%C3%85re%20Strand%2020B%2C%20837%2052%20%C3%85re%2C%20Sweden&amp;destination=Kj%C3%B8pmannsgata%2073%2C%207010%20Trondheim%2C%20Norway&amp;travelmode=driving" target="_blank" rel="noreferrer">Öppna dagens rutt</a>
+                </article>
+
+                <article class="plan-card priority">
+                    <span class="tag">15 juli</span>
+                    <h3>Trondheim -> Åndalsnäs</h3>
+                    <dl class="plan-facts">
+                        <div><dt>Körtid</dt><dd>Ca 330 km / 6 h + färja</dd></div>
+                        <div><dt>Färja</dt><dd>Halsa-Kanestraum, ca 20 min</dd></div>
+                        <div><dt>Laddmål</dt><dd>Øydegard/Aspøya, Molde och Åndalsnäs</dd></div>
+                        <div><dt>Kolla</dt><dd>Färjekö, kustvind och regn</dd></div>
+                    </dl>
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Kj%C3%B8pmannsgata%2073%2C%207010%20Trondheim%2C%20Norway&amp;destination=Vangstun%2019%2C%206300%20%C3%85ndalsnes%2C%20Norway&amp;waypoints=Vals%C3%B8ytunet%2C%20Vals%C3%B8yfjord%2C%20Norway%7CLarsneset%20Rasteplass%2C%20Norway&amp;travelmode=driving" target="_blank" rel="noreferrer">Öppna dagens rutt</a>
+                </article>
+
+                <article class="plan-card priority">
+                    <span class="tag">16 juli</span>
+                    <h3>Åndalsnäs -> Geiranger</h3>
+                    <dl class="plan-facts">
+                        <div><dt>Körtid</dt><dd>Ca 110 km / 3 h + stopp</dd></div>
+                        <div><dt>Färja</dt><dd>Linge-Eidsdal, ca 13 min</dd></div>
+                        <div><dt>Laddmål</dt><dd>Starta med 95-100 %, hotell-ladda direkt</dd></div>
+                        <div><dt>Kolla</dt><dd>Trollstigen/Fv63, rasrisk och väder</dd></div>
+                    </dl>
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Vangstun%2019%2C%206300%20%C3%85ndalsnes%2C%20Norway&amp;destination=Geirangervegen%20101%2C%206216%20Geiranger%2C%20Norway&amp;waypoints=Eidsvatnet%20utsiktspunkt%2C%20Norway&amp;travelmode=driving" target="_blank" rel="noreferrer">Öppna dagens rutt</a>
+                </article>
+
+                <article class="plan-card">
+                    <span class="tag">17 juli</span>
+                    <h3>Geiranger -> Oslo</h3>
+                    <dl class="plan-facts">
+                        <div><dt>Körtid</dt><dd>Hemväg via Dombås och Lillehammer</dd></div>
+                        <div><dt>Första säkra laddning</dt><dd>Dombås Supercharger</dd></div>
+                        <div><dt>Buffert</dt><dd>Lillehammer vid behov</dd></div>
+                        <div><dt>Kolla</dt><dd>Hotell-laddning, fjällväder och daltrafik</dd></div>
+                    </dl>
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Geirangervegen%20101%2C%206216%20Geiranger%2C%20Norway&amp;destination=Oslo%2C%20Norway&amp;waypoints=Domb%C3%A5s%20Supercharger%7CLillehammer%20Supercharger&amp;travelmode=driving" target="_blank" rel="noreferrer">Öppna hemväg</a>
+                </article>
             </div>
         </section>
 
@@ -74,6 +137,11 @@
                     <div class="route-number">01</div>
                     <h3>Åre till Trondheim</h3>
                     <p><strong>14 juli.</strong> Start Åre Strand 20B, stopp i Trondheim och incheckning på Radisson Blu Royal Garden.</p>
+                    <div class="route-stats">
+                        <span>Ca 180 km</span>
+                        <span>Ca 2 h 45 min</span>
+                        <span>Ingen färja</span>
+                    </div>
                     <ul>
                         <li>Fokus: fjällväder, gränspassage och E14.</li>
                         <li>Laddmål: Trondheim Supercharger, gärna före incheckning.</li>
@@ -86,6 +154,11 @@
                     <div class="route-number">02</div>
                     <h3>Trondheim till Åndalsnäs</h3>
                     <p><strong>15 juli.</strong> Start Radisson Blu Royal Garden och stopp/incheckning på Åndalsnäs House.</p>
+                    <div class="route-stats">
+                        <span>Ca 330 km</span>
+                        <span>Ca 6 h + färja</span>
+                        <span>Halsa-Kanestraum</span>
+                    </div>
                     <ul>
                         <li>Fokus: färjelägen, broar, vind och fjordvägar.</li>
                         <li>Färja: Halsa-Kanestraum över Halsafjorden, cirka 20 minuter.</li>
@@ -100,6 +173,11 @@
                     <div class="route-number">03</div>
                     <h3>Åndalsnäs till Geiranger via Trollstigen</h3>
                     <p><strong>16 juli.</strong> Start Åndalsnäs House med hög laddning och stopp/incheckning på Hotel Union Geiranger Bad & Spa.</p>
+                    <div class="route-stats">
+                        <span>Ca 110 km</span>
+                        <span>Ca 3 h + stopp</span>
+                        <span>Linge-Eidsdal</span>
+                    </div>
                     <ul>
                         <li>Fokus: säsongsöppning, rasfare, branta hårnålar och färja.</li>
                         <li>Färja: Linge-Eidsdal över Norddalsfjorden, cirka 13 minuter.</li>
@@ -117,7 +195,7 @@
                 <p class="eyebrow">Fjordpassager</p>
                 <h2>Två färjor på rutten</h2>
                 <p class="subtle">
-                    Planera med lite köbuffert i juli. Priserna nedan är för personbil t.o.m. 6 meter utan särskilt AutoPASS-förskottsavtal.
+                    Planera med lite köbuffert i juli. Priserna nedan är 2026-priser för personbil t.o.m. 6 meter utan särskilt AutoPASS-förskottsavtal.
                 </p>
             </div>
 
@@ -157,7 +235,7 @@
 
             <div class="cost-summary ferry-total">
                 <strong>Färjekostnad:</strong>
-                <span>Totalt cirka 221 NOK för bil t.o.m. 6 meter. Elbil och AutoPASS-avtal kan ge lägre pris.</span>
+                <span>Totalt cirka 221 NOK för bil t.o.m. 6 meter. Elbil och AutoPASS-avtal kan ge lägre pris. Kontrollerat hos Fjord1 15 juni 2026.</span>
             </div>
         </section>
 
@@ -236,6 +314,34 @@
             </div>
         </section>
 
+        <section class="section cost-section" id="kostnader">
+            <div class="section-heading">
+                <p class="eyebrow">Kända kostnader</p>
+                <h2>Resekostnader att ha koll på</h2>
+                <p class="subtle">
+                    Samlar bokade hotell och färjor. Laddning, mat, vägtullar och parkering är inte inräknade.
+                </p>
+            </div>
+
+            <div class="cost-grid">
+                <article class="cost-card">
+                    <span class="label">Hotell</span>
+                    <strong>17 326 NOK</strong>
+                    <p>Tre nätter, två rum enligt bokningarna.</p>
+                </article>
+                <article class="cost-card">
+                    <span class="label">Färjor</span>
+                    <strong>Ca 221 NOK</strong>
+                    <p>Halsa-Kanestraum och Linge-Eidsdal, bil t.o.m. 6 meter.</p>
+                </article>
+                <article class="cost-card total">
+                    <span class="label">Summa kända</span>
+                    <strong>Ca 17 547 NOK</strong>
+                    <p>Cirka 17 107 SEK med samma kurs som hotellberäkningen.</p>
+                </article>
+            </div>
+        </section>
+
         <section class="section rest-section" id="rastplatser">
             <div class="section-heading">
                 <p class="eyebrow">Pausförslag</p>
@@ -286,6 +392,43 @@
             </div>
 
             <div class="camera-grid" id="cameraGrid"></div>
+        </section>
+
+        <section class="section weather-section" id="vader">
+            <div class="section-heading">
+                <p class="eyebrow">Väder och vägstatus</p>
+                <h2>Snabblänkar före avfärd</h2>
+                <p class="subtle">
+                    Använd dessa tillsammans med Vegvesens trafikkarta samma morgon. Trollstigen och fjällvägar kan ändra planen snabbt.
+                </p>
+            </div>
+
+            <div class="weather-grid">
+                <article class="weather-card">
+                    <span class="tag">Dag 1</span>
+                    <h3>Meråker / E14</h3>
+                    <p>Fjällväder, regn och sikt på vägen mellan Åre och Trondheim.</p>
+                    <a href="https://www.yr.no/en/search?q=Mer%C3%A5ker" target="_blank" rel="noreferrer">Sök väder på Yr</a>
+                </article>
+                <article class="weather-card">
+                    <span class="tag">Dag 2</span>
+                    <h3>Molde / kusten</h3>
+                    <p>Kustvind, regn och sikt inför Atlanterhavsvegen och vidare mot Åndalsnäs.</p>
+                    <a href="https://www.yr.no/en/search?q=Molde" target="_blank" rel="noreferrer">Sök väder på Yr</a>
+                </article>
+                <article class="weather-card critical">
+                    <span class="tag">Dag 3</span>
+                    <h3>Trollstigen / Fv63</h3>
+                    <p>Säsongsöppning, rasrisk, köer och fjällväder är resans viktigaste kontrollpunkt.</p>
+                    <a href="https://www.vegvesen.no/trafikk" target="_blank" rel="noreferrer">Öppna vägstatus</a>
+                </article>
+                <article class="weather-card">
+                    <span class="tag">Dag 3-4</span>
+                    <h3>Geiranger</h3>
+                    <p>Väder inför ankomst, hotell-laddning och hemväg mot Dombås.</p>
+                    <a href="https://www.yr.no/en/search?q=Geiranger" target="_blank" rel="noreferrer">Sök väder på Yr</a>
+                </article>
+            </div>
         </section>
 
         <section class="section tesla-section" id="tesla">
@@ -416,15 +559,25 @@
                 </p>
             </div>
             <div class="checklist">
+                <h3>Före start</h3>
                 <label><input type="checkbox"> Kontrollera Vegvesen trafikkarta</label>
-                <label><input type="checkbox"> Kontrollera väder för Meråker, kusten och Trollstigen</label>
-                <label><input type="checkbox"> Kontrollera färjelägen och avgångar</label>
+                <label><input type="checkbox"> Kontrollera väder för Meråker, kusten, Trollstigen och Geiranger</label>
+                <label><input type="checkbox"> Kontrollera Tesla Trip Planner i bilen innan varje etapp</label>
+                <label><input type="checkbox"> Ladda ner offlinekarta</label>
+
+                <h3>Före färjor</h3>
+                <label><input type="checkbox"> Kontrollera Halsa-Kanestraum och Linge-Eidsdal hos Fjord1</label>
+                <label><input type="checkbox"> Lägg in extra köbuffert i juli</label>
+
+                <h3>Före Trollstigen</h3>
                 <label><input type="checkbox"> Kontrollera om Trollstigen/Fv63 är öppen</label>
                 <label><input type="checkbox"> Lämna Åndalsnäs med 95-100 % före Geiranger</label>
                 <label><input type="checkbox"> Lägg på 10-15 % extra laddbuffert vid regn, kyla, färjor eller mycket packning</label>
-                <label><input type="checkbox"> Kontrollera Tesla Trip Planner i bilen innan varje etapp</label>
-                <label><input type="checkbox"> Ladda ner offlinekarta</label>
-                <label><input type="checkbox"> Lägg in alternativa stopp</label>
+
+                <h3>Vid hotell</h3>
+                <label><input type="checkbox"> Ladda före eller direkt efter incheckning</label>
+                <label><input type="checkbox"> Flytta bilen när hotell-laddningen är klar</label>
+                <label><input type="checkbox"> Lägg in alternativa stopp för nästa dag</label>
             </div>
         </section>
     </main>

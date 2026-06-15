@@ -216,8 +216,11 @@ main {
 .route-grid,
 .camera-grid,
 .hotel-grid,
+.plan-grid,
 .ferry-grid,
 .rest-grid,
+.cost-grid,
+.weather-grid,
 .charge-grid,
 .tesla-grid,
 .strategy-grid {
@@ -229,8 +232,11 @@ main {
 .route-card,
 .camera-card,
 .hotel-card,
+.plan-card,
 .ferry-card,
 .rest-card,
+.cost-card,
+.weather-card,
 .charge-card,
 .info-panel,
 .strategy-card,
@@ -243,8 +249,11 @@ main {
 
 .route-card,
 .camera-card,
+.plan-card,
 .ferry-card,
 .rest-card,
+.cost-card,
+.weather-card,
 .charge-card,
 .info-panel,
 .strategy-card {
@@ -265,6 +274,77 @@ main {
     background: var(--pine);
     color: var(--white);
     font-weight: 900;
+}
+
+.plan-section {
+    scroll-margin-top: 20px;
+}
+
+.plan-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.plan-card {
+    display: grid;
+    align-content: start;
+    gap: 12px;
+}
+
+.plan-card.priority {
+    border-color: rgba(217, 155, 61, 0.55);
+}
+
+.plan-facts {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+}
+
+.plan-facts div {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f3f6f7;
+}
+
+.plan-facts dt {
+    margin-bottom: 3px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 850;
+    text-transform: uppercase;
+}
+
+.plan-facts dd {
+    margin: 0;
+    color: var(--ink);
+    font-weight: 850;
+    line-height: 1.35;
+}
+
+.plan-card a,
+.weather-card a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    color: var(--fjord);
+    font-weight: 850;
+    text-decoration: none;
+}
+
+.route-stats {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0 0 14px;
+}
+
+.route-stats span {
+    padding: 7px 9px;
+    border-radius: 8px;
+    background: #f3f6f7;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 850;
 }
 
 .route-card p,
@@ -482,6 +562,33 @@ main {
     background: var(--fjord);
 }
 
+.cost-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cost-card {
+    display: grid;
+    align-content: start;
+    gap: 9px;
+}
+
+.cost-card strong {
+    font-size: 1.8rem;
+    line-height: 1.05;
+}
+
+.cost-card p,
+.weather-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+.cost-card.total {
+    border-color: rgba(15, 74, 61, 0.45);
+    background: #f4faf7;
+}
+
 .cost-summary {
     margin-top: 16px;
     padding: 18px 20px;
@@ -520,6 +627,24 @@ main {
     color: var(--fjord);
     font-weight: 850;
     text-decoration: none;
+}
+
+.weather-section {
+    scroll-margin-top: 20px;
+}
+
+.weather-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.weather-card {
+    display: grid;
+    align-content: start;
+    gap: 10px;
+}
+
+.weather-card.critical {
+    border-color: rgba(217, 155, 61, 0.6);
 }
 
 .tesla-section {
@@ -657,6 +782,16 @@ main {
     padding: 12px;
 }
 
+.checklist h3 {
+    margin: 14px 12px 4px;
+    color: var(--pine);
+    font-size: 0.95rem;
+}
+
+.checklist h3:first-child {
+    margin-top: 6px;
+}
+
 .checklist label {
     min-height: 48px;
     display: flex;
@@ -723,8 +858,11 @@ footer p {
     .route-grid,
     .camera-grid,
     .hotel-grid,
+    .plan-grid,
     .ferry-grid,
     .rest-grid,
+    .cost-grid,
+    .weather-grid,
     .charge-grid,
     .tesla-grid,
     .strategy-grid,
