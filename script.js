@@ -98,6 +98,56 @@ const cameras = [
         location: "Åndalsnäs",
         maps: "https://www.google.com/maps/search/?api=1&query=%C3%85ndalsnes%20E136",
         vegvesen: "https://www.vegvesen.no/trafikk"
+    },
+    {
+        route: "trollstigen",
+        routeLabel: "Trollstigen-Geiranger",
+        title: "Åndalsnäs / Isterdalen",
+        road: "Fv63",
+        focus: "Start mot Trollstigen, väder och trafikmängd",
+        location: "Åndalsnäs-Isterdalen",
+        maps: "https://www.google.com/maps/search/?api=1&query=%C3%85ndalsnes%20Isterdalen%20Fv63",
+        vegvesen: "https://www.vegvesen.no/trafikk"
+    },
+    {
+        route: "trollstigen",
+        routeLabel: "Trollstigen-Geiranger",
+        title: "Trollstigen",
+        road: "Fv63",
+        focus: "Säsongsöppning, rasfare, hårnålar och köer",
+        location: "Trollstigen",
+        maps: "https://www.google.com/maps/search/?api=1&query=Trollstigen%20Fv63",
+        vegvesen: "https://www.vegvesen.no/trafikk"
+    },
+    {
+        route: "trollstigen",
+        routeLabel: "Trollstigen-Geiranger",
+        title: "Gudbrandsjuvet / Valldal",
+        road: "Fv63",
+        focus: "Trång turistväg, stopp och väderbyte",
+        location: "Gudbrandsjuvet-Valldal",
+        maps: "https://www.google.com/maps/search/?api=1&query=Gudbrandsjuvet%20Valldal%20Fv63",
+        vegvesen: "https://www.vegvesen.no/trafikk"
+    },
+    {
+        route: "trollstigen",
+        routeLabel: "Trollstigen-Geiranger",
+        title: "Linge / Eidsdal färja",
+        road: "Fv63",
+        focus: "Färjeläge, kö och avgångar över fjorden",
+        location: "Linge-Eidsdal",
+        maps: "https://www.google.com/maps/search/?api=1&query=Linge%20Eidsdal%20ferry",
+        vegvesen: "https://www.vegvesen.no/trafikk"
+    },
+    {
+        route: "trollstigen",
+        routeLabel: "Trollstigen-Geiranger",
+        title: "Ørnesvingen / Geiranger",
+        road: "Fv63",
+        focus: "Brant nedfart, turisttrafik och utsiktsstopp",
+        location: "Ørnesvingen-Geiranger",
+        maps: "https://www.google.com/maps/search/?api=1&query=%C3%98rnesvingen%20Geiranger%20Fv63",
+        vegvesen: "https://www.vegvesen.no/trafikk"
     }
 ];
 

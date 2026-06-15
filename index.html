@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Norge2026 samlar trafikkameror och stopp för rutten Åre-Trondheim-Åndalsnäs.">
+    <meta name="description" content="Norge2026 samlar trafikkameror och stopp för rutten Åre-Trondheim-Åndalsnäs-Geiranger.">
     <title>Norge2026 - Trafikkameror</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,10 +19,10 @@
         </nav>
 
         <div class="hero-content" id="top">
-            <p class="eyebrow">Åre - Trondheim - Åndalsnäs</p>
+            <p class="eyebrow">Åre - Trondheim - Åndalsnäs - Geiranger</p>
             <h1>Norsk roadtrip med kamerakoll längs vägen.</h1>
             <p class="intro">
-                En fokuserad resevy för vägen från Jämtland till Trøndelag och vidare mot fjordar, färjor och kustvägen till Åndalsnäs.
+                En fokuserad resevy för vägen från Jämtland till Trøndelag, vidare längs kusten till Åndalsnäs och över Trollstigen mot Geiranger.
             </p>
             <div class="hero-actions">
                 <a class="button primary" href="#kameror">Visa trafikkameror</a>
@@ -35,7 +35,7 @@
         <section class="quick-panel" aria-label="Snabbstatus">
             <div>
                 <span class="label">Etapper</span>
-                <strong>2</strong>
+                <strong>3</strong>
             </div>
             <div>
                 <span class="label">Kamerapunkter</span>
@@ -54,7 +54,7 @@
         <section class="section" id="rutter">
             <div class="section-heading">
                 <p class="eyebrow">Ruttupplägg</p>
-                <h2>Två kördagar att hålla koll på</h2>
+                <h2>Tre kördagar att hålla koll på</h2>
             </div>
 
             <div class="route-grid">
@@ -79,6 +79,17 @@
                     </ul>
                     <a href="https://www.google.com/maps/dir/Trondheim/Kristiansund/Molde/%C3%85ndalsnes" target="_blank" rel="noreferrer">Öppna rutt i Google Maps</a>
                 </article>
+
+                <article class="route-card">
+                    <div class="route-number">03</div>
+                    <h3>Åndalsnäs till Geiranger via Trollstigen</h3>
+                    <p>Nationella turistvägen via Isterdalen, Trollstigen, Valldal, färjan Linge-Eidsdal och Ørnevegen ner mot Geiranger.</p>
+                    <ul>
+                        <li>Fokus: säsongsöppning, rasfare, branta hårnålar och färja.</li>
+                        <li>Extra koll: Trollstigen, Gudbrandsjuvet, Linge/Eidsdal och Ørnesvingen.</li>
+                    </ul>
+                    <a href="https://www.google.com/maps/dir/%C3%85ndalsnes/Trollstigen/Valldal/Linge/Eidsdal/Geiranger" target="_blank" rel="noreferrer">Öppna rutt i Google Maps</a>
+                </article>
             </div>
         </section>
 
@@ -95,6 +106,7 @@
                 <button class="filter active" type="button" data-filter="all">Alla</button>
                 <button class="filter" type="button" data-filter="are-trondheim">Åre-Trondheim</button>
                 <button class="filter" type="button" data-filter="coast">Kustvägen</button>
+                <button class="filter" type="button" data-filter="trollstigen">Trollstigen-Geiranger</button>
             </div>
 
             <div class="camera-grid" id="cameraGrid"></div>
@@ -110,8 +122,9 @@
             </div>
             <div class="checklist">
                 <label><input type="checkbox"> Kontrollera Vegvesen trafikkarta</label>
-                <label><input type="checkbox"> Kontrollera väder för Meråker och kusten</label>
+                <label><input type="checkbox"> Kontrollera väder för Meråker, kusten och Trollstigen</label>
                 <label><input type="checkbox"> Kontrollera färjelägen och avgångar</label>
+                <label><input type="checkbox"> Kontrollera om Trollstigen/Fv63 är öppen</label>
                 <label><input type="checkbox"> Ladda ner offlinekarta</label>
                 <label><input type="checkbox"> Lägg in alternativa stopp</label>
             </div>
@@ -126,6 +139,7 @@
         <div class="source-links">
             <a href="https://www.vegvesen.no/webkamera" target="_blank" rel="noreferrer">Vegvesen webkamera</a>
             <a href="https://www.vegvesen.no/trafikk" target="_blank" rel="noreferrer">Vegvesen trafikk</a>
+            <a href="https://www.nasjonaleturistveger.no/en/routes/geiranger--trollstigen/" target="_blank" rel="noreferrer">Geiranger-Trollstigen</a>
             <a href="https://dataut.vegvesen.no/dataset/webkamera" target="_blank" rel="noreferrer">Webkamera dataset</a>
         </div>
     </footer>
