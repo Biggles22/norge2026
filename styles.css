@@ -169,7 +169,7 @@ main {
 .quick-panel {
     margin: -54px 0 76px;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     background: var(--white);
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -216,6 +216,7 @@ main {
 .route-grid,
 .camera-grid,
 .hotel-grid,
+.ferry-grid,
 .rest-grid,
 .charge-grid,
 .tesla-grid,
@@ -228,6 +229,7 @@ main {
 .route-card,
 .camera-card,
 .hotel-card,
+.ferry-card,
 .rest-card,
 .charge-card,
 .info-panel,
@@ -241,6 +243,7 @@ main {
 
 .route-card,
 .camera-card,
+.ferry-card,
 .rest-card,
 .charge-card,
 .info-panel,
@@ -412,6 +415,71 @@ main {
 
 .featured-hotel {
     border-color: rgba(15, 74, 61, 0.45);
+}
+
+.ferry-section {
+    scroll-margin-top: 20px;
+}
+
+.ferry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ferry-card {
+    display: grid;
+    align-content: start;
+    gap: 12px;
+    border-color: rgba(47, 111, 143, 0.28);
+}
+
+.ferry-card p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.ferry-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0;
+}
+
+.ferry-facts div {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f3f6f7;
+}
+
+.ferry-facts dt {
+    margin-bottom: 3px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 850;
+    text-transform: uppercase;
+}
+
+.ferry-facts dd {
+    margin: 0;
+    font-weight: 850;
+}
+
+.ferry-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ferry-actions a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    color: var(--fjord);
+    font-weight: 850;
+    text-decoration: none;
+}
+
+.ferry-total {
+    background: var(--fjord);
 }
 
 .cost-summary {
@@ -655,6 +723,7 @@ footer p {
     .route-grid,
     .camera-grid,
     .hotel-grid,
+    .ferry-grid,
     .rest-grid,
     .charge-grid,
     .tesla-grid,
@@ -687,6 +756,10 @@ footer p {
     }
 
     .hotel-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .ferry-facts {
         grid-template-columns: 1fr;
     }
 
