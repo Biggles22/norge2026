@@ -1,0 +1,441 @@
+:root {
+    --ink: #14212e;
+    --muted: #5c6c78;
+    --line: #d7e1e7;
+    --paper: #f6f8f7;
+    --white: #ffffff;
+    --pine: #0f4a3d;
+    --fjord: #1f6f8b;
+    --mist: #e7eef1;
+    --sun: #d99b3d;
+    --shadow: 0 22px 60px rgba(20, 33, 46, 0.14);
+    font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--paper);
+}
+
+a {
+    color: inherit;
+}
+
+.hero {
+    min-height: 88vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background:
+        linear-gradient(90deg, rgba(7, 20, 31, 0.78), rgba(7, 20, 31, 0.32) 54%, rgba(7, 20, 31, 0.12)),
+        url("assets/norway-road-hero.png") center / cover no-repeat;
+    color: var(--white);
+}
+
+.topbar {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 11px;
+    border-radius: 8px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-weight: 750;
+}
+
+.hero-content {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    align-self: center;
+    padding-bottom: 8vh;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: var(--sun);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    max-width: 780px;
+    margin-bottom: 18px;
+    font-size: clamp(2.6rem, 7vw, 6.8rem);
+    line-height: 0.95;
+    letter-spacing: 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: clamp(1.9rem, 4vw, 3.2rem);
+    line-height: 1.05;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+}
+
+.intro {
+    max-width: 620px;
+    margin-bottom: 26px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.hero-actions,
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.button,
+.filter {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font: inherit;
+    font-weight: 850;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.primary,
+.filter.active {
+    background: var(--sun);
+    color: #1d160b;
+}
+
+.button.secondary {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.32);
+}
+
+main {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.quick-panel {
+    margin: -54px 0 76px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.quick-panel div {
+    padding: 22px;
+    border-right: 1px solid var(--line);
+}
+
+.quick-panel div:last-child {
+    border-right: 0;
+}
+
+.label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 850;
+    text-transform: uppercase;
+}
+
+.quick-panel strong {
+    font-size: 1.55rem;
+}
+
+.section {
+    margin-bottom: 84px;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 24px;
+}
+
+.subtle {
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.route-grid,
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.route-card,
+.camera-card,
+.checklist {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 12px 34px rgba(20, 33, 46, 0.08);
+}
+
+.route-card,
+.camera-card {
+    padding: 22px;
+}
+
+.route-number {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: var(--pine);
+    color: var(--white);
+    font-weight: 900;
+}
+
+.route-card p,
+.route-card li,
+.camera-card p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.route-card ul {
+    padding-left: 18px;
+}
+
+.route-card a,
+.camera-card a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    margin-top: 8px;
+    color: var(--fjord);
+    font-weight: 850;
+    text-decoration: none;
+}
+
+.camera-section {
+    padding: 38px;
+    margin-left: -38px;
+    margin-right: -38px;
+    background: var(--mist);
+    border-radius: 8px;
+}
+
+.filters {
+    margin-bottom: 18px;
+}
+
+.filter {
+    background: var(--white);
+    color: var(--ink);
+    border-color: var(--line);
+}
+
+.camera-card {
+    display: grid;
+    gap: 12px;
+}
+
+.camera-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tag {
+    padding: 6px 9px;
+    border-radius: 999px;
+    background: #eaf4f1;
+    color: var(--pine);
+    font-size: 12px;
+    font-weight: 850;
+    white-space: nowrap;
+}
+
+.camera-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.camera-meta span {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f3f6f7;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.camera-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(300px, 1.15fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.checklist {
+    padding: 12px;
+}
+
+.checklist label {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    font-weight: 750;
+}
+
+.checklist label:last-child {
+    border-bottom: 0;
+}
+
+.checklist input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--pine);
+}
+
+footer {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 34px 0 44px;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+}
+
+footer p {
+    margin: 6px 0 0;
+}
+
+.source-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.source-links a {
+    color: var(--fjord);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+@media (max-width: 780px) {
+    .hero {
+        min-height: 78vh;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+    }
+
+    .quick-panel,
+    .route-grid,
+    .camera-grid,
+    .split {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-panel {
+        margin-top: -34px;
+    }
+
+    .quick-panel div {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .quick-panel div:last-child {
+        border-bottom: 0;
+    }
+
+    .camera-section {
+        padding: 24px 16px;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .camera-meta {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .source-links {
+        justify-content: flex-start;
+    }
+}

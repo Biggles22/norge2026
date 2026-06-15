@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Norge2026 samlar trafikkameror och stopp för rutten Åre-Trondheim-Åndalsnäs.">
+    <title>Norge2026 - Trafikkameror</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="topbar" aria-label="Huvudnavigation">
+            <a class="brand" href="#top" aria-label="Norge2026 startsida">Norge2026</a>
+            <div class="nav-links">
+                <a href="#rutter">Rutter</a>
+                <a href="#kameror">Kameror</a>
+                <a href="#checklista">Checklista</a>
+            </div>
+        </nav>
+
+        <div class="hero-content" id="top">
+            <p class="eyebrow">Åre - Trondheim - Åndalsnäs</p>
+            <h1>Norsk roadtrip med kamerakoll längs vägen.</h1>
+            <p class="intro">
+                En fokuserad resevy för vägen från Jämtland till Trøndelag och vidare mot fjordar, färjor och kustvägen till Åndalsnäs.
+            </p>
+            <div class="hero-actions">
+                <a class="button primary" href="#kameror">Visa trafikkameror</a>
+                <a class="button secondary" href="https://www.vegvesen.no/trafikk" target="_blank" rel="noreferrer">Öppna Vegvesen</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="quick-panel" aria-label="Snabbstatus">
+            <div>
+                <span class="label">Etapper</span>
+                <strong>2</strong>
+            </div>
+            <div>
+                <span class="label">Kamerapunkter</span>
+                <strong id="cameraCount">0</strong>
+            </div>
+            <div>
+                <span class="label">Källor</span>
+                <strong>Vegvesen</strong>
+            </div>
+            <div>
+                <span class="label">Status</span>
+                <strong>Planering</strong>
+            </div>
+        </section>
+
+        <section class="section" id="rutter">
+            <div class="section-heading">
+                <p class="eyebrow">Ruttupplägg</p>
+                <h2>Två kördagar att hålla koll på</h2>
+            </div>
+
+            <div class="route-grid">
+                <article class="route-card">
+                    <div class="route-number">01</div>
+                    <h3>Åre till Trondheim</h3>
+                    <p>E14 över Storlien och Meråker, vidare mot Stjørdal/Hell och in till Trondheim.</p>
+                    <ul>
+                        <li>Fokus: fjällväder, gränspassage och E14.</li>
+                        <li>Extra koll: Meråker och infarten mot Trondheim.</li>
+                    </ul>
+                    <a href="https://www.google.com/maps/dir/%C3%85re/Trondheim" target="_blank" rel="noreferrer">Öppna rutt i Google Maps</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-number">02</div>
+                    <h3>Trondheim till Åndalsnäs via kusten</h3>
+                    <p>Kustigare alternativ via Orkanger, Halsa/Kanestraum, Kristiansund, Atlanterhavsvegen, Molde och E136 mot Åndalsnäs.</p>
+                    <ul>
+                        <li>Fokus: färjelägen, broar, vind och fjordvägar.</li>
+                        <li>Extra koll: Atlanterhavsvegen och Romsdalen.</li>
+                    </ul>
+                    <a href="https://www.google.com/maps/dir/Trondheim/Kristiansund/Molde/%C3%85ndalsnes" target="_blank" rel="noreferrer">Öppna rutt i Google Maps</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section camera-section" id="kameror">
+            <div class="section-heading">
+                <p class="eyebrow">Trafikkameror</p>
+                <h2>Kamerapunkter längs rutten</h2>
+                <p class="subtle">
+                    Klicka vidare till Vegvesens livevy för aktuell bild, trafikhändelser och vägstatus.
+                </p>
+            </div>
+
+            <div class="filters" role="group" aria-label="Filtrera kamerapunkter">
+                <button class="filter active" type="button" data-filter="all">Alla</button>
+                <button class="filter" type="button" data-filter="are-trondheim">Åre-Trondheim</button>
+                <button class="filter" type="button" data-filter="coast">Kustvägen</button>
+            </div>
+
+            <div class="camera-grid" id="cameraGrid"></div>
+        </section>
+
+        <section class="section split" id="checklista">
+            <div>
+                <p class="eyebrow">Före avfärd</p>
+                <h2>Snabb checklista</h2>
+                <p class="subtle">
+                    Använd listan samma morgon som ni kör. Fjällväder och färjor kan ändra planen snabbt.
+                </p>
+            </div>
+            <div class="checklist">
+                <label><input type="checkbox"> Kontrollera Vegvesen trafikkarta</label>
+                <label><input type="checkbox"> Kontrollera väder för Meråker och kusten</label>
+                <label><input type="checkbox"> Kontrollera färjelägen och avgångar</label>
+                <label><input type="checkbox"> Ladda ner offlinekarta</label>
+                <label><input type="checkbox"> Lägg in alternativa stopp</label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <strong>Norge2026</strong>
+            <p>Planeringssite för resa genom Norge 2026.</p>
+        </div>
+        <div class="source-links">
+            <a href="https://www.vegvesen.no/webkamera" target="_blank" rel="noreferrer">Vegvesen webkamera</a>
+            <a href="https://www.vegvesen.no/trafikk" target="_blank" rel="noreferrer">Vegvesen trafikk</a>
+            <a href="https://dataut.vegvesen.no/dataset/webkamera" target="_blank" rel="noreferrer">Webkamera dataset</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
