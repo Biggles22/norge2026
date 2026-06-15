@@ -216,6 +216,7 @@ main {
 .route-grid,
 .camera-grid,
 .hotel-grid,
+.rest-grid,
 .charge-grid,
 .tesla-grid,
 .strategy-grid {
@@ -227,6 +228,7 @@ main {
 .route-card,
 .camera-card,
 .hotel-card,
+.rest-card,
 .charge-card,
 .info-panel,
 .strategy-card,
@@ -239,6 +241,7 @@ main {
 
 .route-card,
 .camera-card,
+.rest-card,
 .charge-card,
 .info-panel,
 .strategy-card {
@@ -425,6 +428,30 @@ main {
 
 .cost-summary span {
     color: rgba(255, 255, 255, 0.86);
+}
+
+.rest-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rest-card {
+    display: grid;
+    align-content: start;
+    gap: 10px;
+}
+
+.rest-card p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.rest-card a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    color: var(--fjord);
+    font-weight: 850;
+    text-decoration: none;
 }
 
 .tesla-section {
@@ -628,6 +655,7 @@ footer p {
     .route-grid,
     .camera-grid,
     .hotel-grid,
+    .rest-grid,
     .charge-grid,
     .tesla-grid,
     .strategy-grid,
