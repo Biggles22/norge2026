@@ -169,7 +169,7 @@ main {
 .quick-panel {
     margin: -54px 0 76px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     background: var(--white);
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -214,7 +214,10 @@ main {
 }
 
 .route-grid,
-.camera-grid {
+.camera-grid,
+.charge-grid,
+.tesla-grid,
+.strategy-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
@@ -222,6 +225,9 @@ main {
 
 .route-card,
 .camera-card,
+.charge-card,
+.info-panel,
+.strategy-card,
 .checklist {
     background: var(--white);
     border: 1px solid var(--line);
@@ -230,7 +236,10 @@ main {
 }
 
 .route-card,
-.camera-card {
+.camera-card,
+.charge-card,
+.info-panel,
+.strategy-card {
     padding: 22px;
 }
 
@@ -328,6 +337,130 @@ main {
     flex-wrap: wrap;
 }
 
+.tesla-section {
+    scroll-margin-top: 20px;
+}
+
+.charge-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 18px;
+}
+
+.charge-card {
+    display: grid;
+    align-content: start;
+    gap: 9px;
+}
+
+.charge-card h3,
+.strategy-card h3,
+.info-panel h3 {
+    margin-bottom: 4px;
+}
+
+.charge-card p,
+.strategy-card p,
+.info-panel p,
+.detail-list dd,
+.info-panel li {
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+.charge-card strong {
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.charge-card.priority {
+    border-color: rgba(217, 155, 61, 0.55);
+}
+
+.charge-card.hotel-charge {
+    border-color: rgba(15, 74, 61, 0.45);
+    background: #f4faf7;
+}
+
+.tesla-grid {
+    margin-bottom: 18px;
+}
+
+.detail-list {
+    display: grid;
+    gap: 13px;
+    margin: 0;
+}
+
+.detail-list div {
+    padding-bottom: 13px;
+    border-bottom: 1px solid var(--line);
+}
+
+.detail-list div:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.detail-list dt {
+    margin-bottom: 4px;
+    font-weight: 900;
+}
+
+.detail-list dd {
+    margin: 0;
+}
+
+.geiranger-plan ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.stage-table-wrapper {
+    margin: 18px 0;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 12px 34px rgba(20, 33, 46, 0.08);
+}
+
+.stage-table {
+    width: 100%;
+    min-width: 860px;
+    border-collapse: collapse;
+}
+
+.stage-table th,
+.stage-table td {
+    padding: 13px 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+}
+
+.stage-table th {
+    background: var(--pine);
+    color: var(--white);
+    font-size: 13px;
+}
+
+.stage-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.stage-table td {
+    color: var(--muted);
+}
+
+.stage-table td:first-child {
+    color: var(--ink);
+    font-weight: 850;
+}
+
+.strategy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .split {
     display: grid;
     grid-template-columns: minmax(0, 0.85fr) minmax(300px, 1.15fr);
@@ -404,6 +537,9 @@ footer p {
     .quick-panel,
     .route-grid,
     .camera-grid,
+    .charge-grid,
+    .tesla-grid,
+    .strategy-grid,
     .split {
         grid-template-columns: 1fr;
     }
